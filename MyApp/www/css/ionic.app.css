@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
   body a {
@@ -22,7 +22,7 @@ body {
     display: inline-block;
     margin-top: 0; }
   body.fade-background #modal {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -97,7 +97,8 @@ nav {
 
 .home-page section {
   width: 90%;
-  padding: 0 5%; }
+  padding: 0 5%;
+  margin-bottom: 40px; }
   .home-page section button {
     border: 0;
     cursor: pointer;

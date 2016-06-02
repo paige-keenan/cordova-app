@@ -1,11 +1,12 @@
 <!-- Home Page -->
 <section class='home-page'>
-  <img src='../../img/home-hero.png' alt='hand holding ice cream' />
-  <section>
-    <h2>Iam & absurdum</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.</p>
-    <button>Learn More</button>
-    <div ui-view></div>
-  </section>
+  <div ng-repeat="data in imageTextModulesHome">
+    <img src='{{ data.img }}' alt='{{data.imgAlt}}' />
+    <section>
+      <h2>{{data.headline}}</h2>
+      <p>{{data.body}}</p>
+      <button>{{data.buttonText}}</button>
+    </section>
+  </div>
+  <div ui-view></div>
 </section>
-

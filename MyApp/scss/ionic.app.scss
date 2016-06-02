@@ -55,7 +55,7 @@ $modal-background: rgba(0, 0, 0, 0.57);
 body {
   margin: 0 auto;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
@@ -74,7 +74,7 @@ body {
   }
   // Fades background on nav click
   &.fade-background #modal {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -170,6 +170,7 @@ nav {
 
   section {
     @include container;
+    margin-bottom: 40px;
 
     button {
       @include primary-button;
