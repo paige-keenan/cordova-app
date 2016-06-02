@@ -14,16 +14,23 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       controller: 'homeController'
     })
 
-
     // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
     .state('about', {
       url: '/about',
+      templateUrl: 'pages/about/about.html',
+      controller: 'aboutController'
+    })
+
+    // SELFIE SUNDAE PAGE AND MULTIPLE NAMED VIEWS =================================
+    .state('selfie-sundae', {
+      url: '/selfie-sundae',
       templateUrl: 'pages/about/about.html',
       controller: 'aboutController'
     });
 
 });
 
+// Home Page Data
 myApp.controller('homeController', function($scope) {
   $scope.homeData = [
     {
@@ -61,6 +68,7 @@ myApp.controller('homeController', function($scope) {
   ];
 });
 
+// About Page Data
 myApp.controller('aboutController', function($scope) {
   $scope.aboutData = [
     {
@@ -80,6 +88,7 @@ myApp.controller('aboutController', function($scope) {
   ];
 });
 
+// Toggle Nav State
 myApp.controller('navControl', function($scope) {
   $scope.isActive = false;
   $scope.toggleNav = function(scope) {
