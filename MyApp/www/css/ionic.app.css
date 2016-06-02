@@ -21,6 +21,13 @@ body {
     letter-spacing: 1px;
     display: inline-block;
     margin-top: 0; }
+  body.fade-background #modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.57); }
 
 nav {
   background: #f74902;

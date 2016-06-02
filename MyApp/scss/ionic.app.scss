@@ -5,6 +5,7 @@ $white: #fff;
 $headline-color: #333;
 $paragraph-color: $headline-color;
 $accent-color: #EF8C64;
+$modal-background: rgba(0, 0, 0, 0.57);
 
 // Mixins
 // =====================
@@ -70,6 +71,15 @@ body {
     @include paragraph-font;
     display: inline-block;
     margin-top: 0;
+  }
+  // Fades background on nav click
+  &.fade-background #modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $modal-background;
   }
 }
 
