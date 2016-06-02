@@ -1,5 +1,5 @@
   // create the module and name it myApp
-  var myApp = angular.module('myApp', ['ionic', 'ngCordova', 'ui.router']);
+  var myApp = angular.module('myApp', ['ionic', 'ngCordova', 'ui.router'])
 
   myApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -11,20 +11,6 @@
         .state('home', {
             url: '/home',
             templateUrl: 'pages/home/home.html'
-        })
-
-        .state('home.list', {
-            url: '/list',
-            templateUrl: 'pages/home/list.html',
-            controller: function($scope) {
-                $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-            }
-        })
-
-        // nested list with just some random string data
-        .state('home.paragraph', {
-            url: '/paragraph',
-            template: 'I could sure use a drink right now.'
         })
 
 
@@ -71,24 +57,11 @@
 
     });
 
-myApp.controller('profileEditCtrl', function($scope,Camera, $localStorage,
- $cordovaCamera)
-     {
-        $scope.$storage = $localStorage.$default({ data:[]});
+    myApp.controller('navControl', function($scope) {
+      $scope.isActive = false
+      $scope.toggleNav = function() {
+          $scope.isActive = !$scope.isActive
+      };
+    });
 
-    $scope.takePicture = function()
-    {
-        navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-            destinationType: Camera.DestinationType.DATA_URL });
-
-      function onSuccess(imageData) {
-        var image = document.getElementById('myImage');
-        image.src ="data:image/jpeg;base64," + imageData;
-    }
-
-    function onFail(message) {
-        alert('Failed because: ' + message);
-    }
-
-}});
 

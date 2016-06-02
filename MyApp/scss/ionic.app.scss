@@ -1,23 +1,154 @@
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
+// Variables
+// =====================
+$primary-color: #f74902;
+$white: #fff;
+$headline-color: #333;
+$paragraph-color: $headline-color;
 
-For example, you might change some of the default colors:
+// Mixins
+// =====================
+@mixin headline-font {
+  font-family: 'Work Sans', sans-serif;
+  color: $headline-color;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
+@mixin paragraph-font {
+  font-family: 'Open Sans', sans-serif;
+  color: $paragraph-color;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+}
 
-// The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
+@mixin container {
+  width: 90%;
+  padding: 0 5%;
+}
 
-// Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+@mixin basic-button {
+  border: 0;
+  cursor: pointer;
+}
 
+@mixin primary-button {
+  @include basic-button;
+  background: $primary-color;
+  @include headline-font;
+  color: $white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  font-size: 13px;
+  display: block;
+  margin: 13px auto;
+}
+
+
+// Styles
+// =====================
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    @include headline-font;
+  }
+
+  p {
+    @include paragraph-font;
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+nav {
+  background: $primary-color;
+  position: relative;
+
+  svg {
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+
+  button {
+    padding: 0;
+    width: 30px;
+    height: 17px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-8.5px);
+    @include basic-button;
+
+
+    a {
+      display: inline-block;
+      width: 30px;
+      height: 3px;
+      background: $white;
+
+      &:before,
+      &:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: $white;
+        position: absolute;
+        right: 0;
+      }
+
+      &:before {
+        top: 0;
+      }
+
+      &:after {
+        bottom: 0;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &.active ul {
+    transform: translateX(0);
+    background: $primary-color;
+  }
+}
+
+.home-page {
+  img {
+    width: 100%;
+  }
+
+  section {
+    @include container;
+
+    button {
+      @include primary-button;
+    }
+  }
+}
