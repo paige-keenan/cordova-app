@@ -59,7 +59,7 @@
         {
           img: '../../img/home-hero.png',
           imgAlt: 'Lorem Ipsum',
-          headline: 'New Flavor',
+          headline: 'New Flavor Alert',
           body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
           buttonUrl: '#',
           buttonText: 'Learn More'
@@ -73,12 +73,20 @@
           buttonText: 'Learn More'
         },
         {
-          img: '../../img/summer-flavors-hero.png',
+          img: '../../img/summer-flavors-hero.jpg',
           imgAlt: 'Lorem Ipsum',
           headline: 'Try Our Summer Flavors',
           body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
           buttonUrl: '#',
           buttonText: 'Learn More'
+        },
+        {
+          img: '../../img/swag-hero.jpg',
+          imgAlt: 'Lorem Ipsum',
+          headline: 'Swag Shop',
+          body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
+          buttonUrl: '#',
+          buttonText: 'Shop Now'
         }
       ];
     });
