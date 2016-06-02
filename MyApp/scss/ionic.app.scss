@@ -4,6 +4,7 @@ $primary-color: #f74902;
 $white: #fff;
 $headline-color: #333;
 $paragraph-color: $headline-color;
+$accent-color: #EF8C64;
 
 // Mixins
 // =====================
@@ -21,6 +22,7 @@ $paragraph-color: $headline-color;
   font-size: 13px;
   line-height: 25px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 @mixin container {
@@ -52,6 +54,7 @@ $paragraph-color: $headline-color;
 body {
   margin: 0 auto;
   padding: 0;
+  overflow: hidden;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
@@ -123,19 +126,30 @@ nav {
     padding: 0;
     margin: 0;
     width: 100%;
-    transform: translateX(-100%);
+    background: $primary-color;
+    transform: translateX(100%);
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
+    transition: .2s ease-in-out;
+
+    li {
+      padding: 20px 0 20px 40px;
+      border-top: 1px solid $accent-color;
+      list-style: none;
+    }
 
     a {
+      @include paragraph-font;
       color: $white;
+      font-size: 16px;
+      text-transform: uppercase;
     }
   }
 
   &.active ul {
-    transform: translateX(0);
-    background: $primary-color;
+    transform: translateX(5%);
+    transition: .15s ease-in-out;
   }
 }
 
