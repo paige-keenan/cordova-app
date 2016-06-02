@@ -92,14 +92,17 @@ nav {
     transform: translateX(5%);
     transition: .15s ease-in-out; }
 
-.home-page img {
+.home-page img,
+.about-page img {
   width: 100%; }
 
-.home-page section {
+.home-page section,
+.about-page section {
   width: 90%;
   padding: 0 5%;
   margin-bottom: 40px; }
-  .home-page section button {
+  .home-page section button,
+  .about-page section button {
     border: 0;
     cursor: pointer;
     background: #f74902;

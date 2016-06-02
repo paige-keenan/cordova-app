@@ -25,7 +25,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 });
 
 myApp.controller('homeController', function($scope) {
-  $scope.imageTextModulesHome = [
+  $scope.homeData = [
     {
       img: '../../img/home/home-hero.png',
       imgAlt: 'Lorem Ipsum',
@@ -62,27 +62,17 @@ myApp.controller('homeController', function($scope) {
 });
 
 myApp.controller('aboutController', function($scope) {
-  $scope.imageTextModulesAbout = [
+  $scope.aboutData = [
     {
-      img: '../../img/home/home-hero.png',
+      img: '../../img/about/about-hero.jpg',
       imgAlt: 'Lorem Ipsum',
-      headline: 'Paige',
-      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
-      buttonUrl: '#',
-      buttonText: 'Learn More'
+      headline: 'About',
+      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      img: '../../img/home/selfie-sundae-hero.png',
+      img: '../../img/about/jeni-hero.jpg',
       imgAlt: 'Lorem Ipsum',
-      headline: 'Selfie Sundaes',
-      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
-      buttonUrl: '#',
-      buttonText: 'Learn More'
-    },
-    {
-      img: '../../img/home/home-hero.png',
-      imgAlt: 'Lorem Ipsum',
-      headline: 'Iam & absurdum',
+      headline: 'JENI BRITTON BAUER',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
       buttonUrl: '#',
       buttonText: 'Learn More'

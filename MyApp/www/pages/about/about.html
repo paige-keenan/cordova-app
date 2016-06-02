@@ -1,10 +1,16 @@
-<h1>The About Page</h1>
-<p>This page demonstrates <span class="text-danger">multiple</span> and <span class="text-danger">named</span> views.</p>
-
-
-<div ui-view="columnOne"></div>
-
-<div ui-view="columnTwo">
-
-
-</div>
+<!-- About Page -->
+<section class='about-page'>
+  <div ng-repeat="data in aboutData">
+    <img src='{{ data.img }}' alt='{{data.imgAlt}}' />
+    <section>
+      <h2>{{data.headline}}</h2>
+      <div ng-if=data.body>
+        <p>{{data.body}}</p>
+      </div>
+      <div ng-if=data.buttonText>
+        <button>{{data.buttonText}}</button>
+      </div>
+    </section>
+  </div>
+  <div ui-view></div>
+</section>
