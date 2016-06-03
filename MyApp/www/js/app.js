@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', ['ionic', 'ngCordova', 'ui.router'])
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/help');
 
   $stateProvider
 
@@ -154,18 +154,28 @@ myApp.controller('shopController', function($scope) {
 myApp.controller('helpController', function($scope) {
   $scope.helpData = [
     {
-      img: '../../img/about/about-hero.jpg',
-      imgAlt: 'Lorem Ipsum',
-      headline: 'About',
-      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
+      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      img: '../../img/about/jeni-hero.jpg',
-      imgAlt: 'Lorem Ipsum',
-      headline: 'JENI BRITTON BAUER',
-      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
-      buttonUrl: '#',
-      buttonText: 'Learn More'
+      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
+    },
+    {
+      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
+    },
+    {
+      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
+    },
+    {
+      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
+    },
+    {
+      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     }
   ];
 });

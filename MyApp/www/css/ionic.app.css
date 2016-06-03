@@ -112,24 +112,28 @@ nav {
 .home-page,
 .about-page,
 .selfie-page,
-.shop-page {
+.shop-page,
+.help-page {
   padding-top: 50px; }
   .home-page img,
   .about-page img,
   .selfie-page img,
-  .shop-page img {
+  .shop-page img,
+  .help-page img {
     width: 100%; }
   .home-page section,
   .about-page section,
   .selfie-page section,
-  .shop-page section {
+  .shop-page section,
+  .help-page section {
     width: 90%;
     padding: 0 5%;
     margin-bottom: 40px; }
     .home-page section button,
     .about-page section button,
     .selfie-page section button,
-    .shop-page section button {
+    .shop-page section button,
+    .help-page section button {
       border: 0;
       cursor: pointer;
       background: #f74902;
