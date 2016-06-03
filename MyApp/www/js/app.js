@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', ['ionic', 'ngCordova', 'ui.router'])
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/help');
+  $urlRouterProvider.otherwise('/home');
 
   $stateProvider
 
@@ -154,27 +154,27 @@ myApp.controller('shopController', function($scope) {
 myApp.controller('helpController', function($scope) {
   $scope.helpData = [
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing',
+      question: 'What is a frozen custard',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing',
+      question: 'What\'s a Brambleberry',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing',
+      question: 'Do you make your ice creams in the scoop shops',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing',
+      question: 'What\'s the difference between ice cream, frozen custard, and sorbet',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing',
+      question: 'Who\'s Jeni Britton Bauer',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing',
+      question: 'Where can I find your ice cream near me',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     }
   ];
