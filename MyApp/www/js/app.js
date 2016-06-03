@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', ['ionic', 'ngCordova', 'ui.router'])
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/selfie-sundae');
 
   $stateProvider
 
@@ -24,7 +24,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     // SELFIE SUNDAE PAGE AND MULTIPLE NAMED VIEWS =================================
     .state('selfie-sundae', {
       url: '/selfie-sundae',
-      templateUrl: 'pages/about/about.html',
+      templateUrl: 'pages/selfie-sundae/index.html',
       controller: 'aboutController'
     });
 
