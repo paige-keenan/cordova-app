@@ -12,7 +12,8 @@ body {
     color: #333;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-size: 28px; }
   body h3 {
     font-family: 'Work Sans', sans-serif;
     color: #333;
@@ -46,7 +47,8 @@ body {
 nav {
   background: #f74902;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   nav svg {
     height: 40px;
     display: block;
@@ -170,3 +172,48 @@ nav {
     vertical-align: text-top; }
   .shop-page section button {
     margin: 0 20px; }
+
+.help-page h2 {
+  margin-bottom: 30px; }
+
+.help-page h3,
+.help-page p {
+  text-align: left; }
+  .help-page h3 span,
+  .help-page p span {
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f74902;
+    font-size: 30px;
+    padding-right: 10px;
+    font-weight: bold; }
+
+.help-page h3 {
+  position: relative;
+  padding-left: 30px; }
+  .help-page h3:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-5px);
+    width: 15px;
+    height: 10px;
+    left: 0;
+    background: url(data:image/svg+xml;charset=utf-8,%3Csvg%20style%3D%27fill%3A%20#f74902%27%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%224.902px%22%20height%3D%223.099px%22%20viewBox%3D%220%200%204.902%203.099%22%20enable-background%3D%22new%200%200%204.902%203.099%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M3.098%2C2.474L2.473%2C3.099L1.846%2C2.471L0.129%2C0.754%0A%09c-0.172-0.172-0.172-0.452%2C0-0.625c0.173-0.173%2C0.452-0.173%2C0.625%2C0L2.47%2C1.846l1.675-1.674c0.173-0.173%2C0.454-0.173%2C0.628%2C0%0A%09c0.173%2C0.173%2C0.173%2C0.454%2C0%2C0.627L3.098%2C2.474z%22/%3E%0A%3C/svg%3E%0A);
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.help-page p {
+  display: none; }
+
+.help-page section {
+  border-top: 1px solid #FFEDE6; }
+  .help-page section:first-of-type {
+    border-top: 0; }
+  .help-page section.is-open p {
+    display: block; }
+  .help-page section.is-open h3:before {
+    transform: translateY(-5px) rotate(180deg); }

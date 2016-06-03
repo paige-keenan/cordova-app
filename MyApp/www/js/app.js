@@ -10,14 +10,14 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     // HOME STATES AND NESTED VIEWS ========================================
     .state('home', {
       url: '/home',
-      templateUrl: 'pages/home/home.html',
+      templateUrl: 'pages/home/index.html',
       controller: 'homeController'
     })
 
     // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
     .state('about', {
       url: '/about',
-      templateUrl: 'pages/about/about.html',
+      templateUrl: 'pages/about/index.html',
       controller: 'aboutController'
     })
 
@@ -154,27 +154,27 @@ myApp.controller('shopController', function($scope) {
 myApp.controller('helpController', function($scope) {
   $scope.helpData = [
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      question: 'Lorem Ipsum is simply dummy text of the printing',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      question: 'Lorem Ipsum is simply dummy text of the printing',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      question: 'Lorem Ipsum is simply dummy text of the printing',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      question: 'Lorem Ipsum is simply dummy text of the printing',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      question: 'Lorem Ipsum is simply dummy text of the printing',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      question: 'Lorem Ipsum is simply dummy text of the printing?',
+      question: 'Lorem Ipsum is simply dummy text of the printing',
       answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     }
   ];
@@ -184,6 +184,14 @@ myApp.controller('helpController', function($scope) {
 myApp.controller('navControl', function($scope) {
   $scope.isActive = false;
   $scope.toggleNav = function(scope) {
+      $scope.isActive = !$scope.isActive;
+  };
+});
+
+// Toggle FAQ State
+myApp.controller('faqControl', function($scope) {
+  $scope.isActive = false;
+  $scope.toggleFaq = function(scope) {
       $scope.isActive = !$scope.isActive;
   };
 });
