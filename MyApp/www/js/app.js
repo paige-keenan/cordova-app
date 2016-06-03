@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', ['ionic', 'ngCordova', 'ui.router'])
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/shop');
+  $urlRouterProvider.otherwise('/home');
 
   $stateProvider
 
@@ -33,6 +33,13 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: '/shop',
       templateUrl: 'pages/shop/index.html',
       controller: 'shopController'
+    })
+
+    // HELP PAGE AND MULTIPLE NAMED VIEWS =================================
+    .state('help', {
+      url: '/help',
+      templateUrl: 'pages/help/index.html',
+      controller: 'helpController'
     });
 
 });
@@ -139,6 +146,26 @@ myApp.controller('shopController', function($scope) {
       headline: 'Wildberry Lavender',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
       price: '4.50'
+    }
+  ];
+});
+
+// Help Page Data
+myApp.controller('helpController', function($scope) {
+  $scope.helpData = [
+    {
+      img: '../../img/about/about-hero.jpg',
+      imgAlt: 'Lorem Ipsum',
+      headline: 'About',
+      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
+    },
+    {
+      img: '../../img/about/jeni-hero.jpg',
+      imgAlt: 'Lorem Ipsum',
+      headline: 'JENI BRITTON BAUER',
+      body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
+      buttonUrl: '#',
+      buttonText: 'Learn More'
     }
   ];
 });
