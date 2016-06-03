@@ -85,7 +85,8 @@ body {
 
 nav {
   background: $primary-color;
-  position: relative;
+  position: fixed;
+  width: 100%;
 
   svg {
     height: 40px;
@@ -144,7 +145,6 @@ nav {
     transition: .2s ease-in-out;
 
     li {
-      padding: 20px 0 20px 40px;
       border-top: 1px solid $accent-color;
       list-style: none;
     }
@@ -154,6 +154,9 @@ nav {
       color: $white;
       font-size: 16px;
       text-transform: uppercase;
+      display: block;
+      text-align: left;
+      padding: 20px 0 20px 40px;
     }
   }
 
@@ -164,7 +167,10 @@ nav {
 }
 
 .home-page,
-.about-page {
+.about-page,
+.selfie-page {
+  padding-top: 50px;
+
   img {
     width: 100%;
   }
