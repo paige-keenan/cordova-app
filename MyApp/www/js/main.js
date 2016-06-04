@@ -1,28 +1,26 @@
-(function() {
+var pictureSource;   // picture source
+var destinationType; // sets the format of returned value
 
-  var pictureSource;   // picture source
-  var destinationType; // sets the format of returned value
+document.addEventListener("deviceready",onDeviceReady,false);
 
-  document.addEventListener("deviceready",onDeviceReady,false);
+function onDeviceReady() {
+    pictureSource=navigator.camera.PictureSourceType;
+    destinationType=navigator.camera.DestinationType;
+}
 
-  function onDeviceReady() {
-      pictureSource=navigator.camera.PictureSourceType;
-      destinationType=navigator.camera.DestinationType;
-  }
+function onPhotoDataSuccess(imageData) {
+  var smallImage = document.getElementById('smallImage');
+  smallImage.style.display = 'block';
+  smallImage.src = "data:image/jpeg;base64," + imageData;
+}
 
-  function onPhotoDataSuccess(imageData) {
-    var smallImage = document.getElementById('smallImage');
-    smallImage.style.display = 'block';
-    smallImage.src = "data:image/jpeg;base64," + imageData;
-  }
+function capturePhoto() {
+  navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+    destinationType: destinationType.DATA_URL });
+}
 
-  function capturePhoto() {
-    navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-      destinationType: destinationType.DATA_URL });
-  }
+function onFail(message) {
+  alert('Failed because: ' + message);
+}
 
-  function onFail(message) {
-    alert('Failed because: ' + message);
-  }
-});
 

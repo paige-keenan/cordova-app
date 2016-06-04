@@ -116,6 +116,7 @@ nav {
     position: absolute;
     top: 50%;
     right: 5%;
+    -webkit-transform: translateY(-8.5px);
     transform: translateY(-8.5px);
     @include basic-button;
 
@@ -151,6 +152,7 @@ nav {
     margin: 0;
     width: 100%;
     background: $primary-color;
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
     position: absolute;
     top: 50px;
@@ -174,6 +176,7 @@ nav {
   }
 
   &.active ul {
+    -webkit-transform: translateX(5%);
     transform: translateX(5%);
     transition: .15s ease-in-out;
   }
@@ -261,6 +264,7 @@ nav {
       content: '';
       position: absolute;
       top: 50%;
+      -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
       width: 15px;
       height: 10px;
@@ -288,6 +292,7 @@ nav {
       }
 
       h3:before {
+        -webkit-transform: translateY(-5px) rotate(180deg);
         transform: translateY(-5px) rotate(180deg);
       }
     }
