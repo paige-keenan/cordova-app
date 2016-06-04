@@ -8,12 +8,12 @@ This is intented as a practice project as I navigate the ins and outs of Cordova
 * Mobile Browsers
 
 ### Tech Stack:
-[Cordova](https://cordova.apache.org/)
-[Phonegap](http://phonegap.com/)
-[Ionic](http://ionicframework.com/)
-[Angular](https://angularjs.org/)
-[Google Maps API](https://developers.google.com/maps/documentation/javascript/reference)
-[SCSS](http://sass-lang.com/)
+* [Cordova](https://cordova.apache.org/)
+* [Phonegap](http://phonegap.com/)
+* [Ionic](http://ionicframework.com/)
+* [Angular](https://angularjs.org/)
+* [Google Maps API](https://developers.google.com/maps/documentation/javascript/reference)
+* [SCSS](http://sass-lang.com/)
 
 ### TODO:
 * Add Project Run Instructoins (e.g. `npm install`)
