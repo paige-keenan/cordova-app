@@ -48,7 +48,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 myApp.controller('homeController', function($scope) {
   $scope.homeData = [
     {
-      img: '../../img/home/home-hero.png',
+      img: './img/home/home-hero.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'New Flavor Alert',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
@@ -56,7 +56,7 @@ myApp.controller('homeController', function($scope) {
       buttonText: 'Learn More'
     },
     {
-      img: '../../img/home/selfie-sundae-hero.png',
+      img: './img/home/selfie-sundae-hero.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'Selfie Sundaes',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
@@ -64,7 +64,7 @@ myApp.controller('homeController', function($scope) {
       buttonText: 'Try it Now'
     },
     {
-      img: '../../img/home/summer-flavors-hero.jpg',
+      img: './img/home/summer-flavors-hero.jpg',
       imgAlt: 'Lorem Ipsum',
       headline: 'Try Our Summer Flavors',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
@@ -72,7 +72,7 @@ myApp.controller('homeController', function($scope) {
       buttonText: 'Learn More'
     },
     {
-      img: '../../img/home/swag-hero.jpg',
+      img: './img/home/swag-hero.jpg',
       imgAlt: 'Lorem Ipsum',
       headline: 'Swag Shop',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
@@ -86,13 +86,13 @@ myApp.controller('homeController', function($scope) {
 myApp.controller('aboutController', function($scope) {
   $scope.aboutData = [
     {
-      img: '../../img/about/about-hero.jpg',
+      img: './img/about/about-hero.jpg',
       imgAlt: 'Lorem Ipsum',
       headline: 'About',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.'
     },
     {
-      img: '../../img/about/jeni-hero.jpg',
+      img: './img/about/jeni-hero.jpg',
       imgAlt: 'Lorem Ipsum',
       headline: 'JENI BRITTON BAUER',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.',
@@ -106,42 +106,42 @@ myApp.controller('aboutController', function($scope) {
 myApp.controller('shopController', function($scope) {
   $scope.shopData = [
     {
-      img: '../../img/shop/ice-cream-spoon.png',
+      img: './img/shop/ice-cream-spoon.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'Salty Caramel',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
       price: '4.50'
     },
     {
-      img: '../../img/shop/ice-cream-spoon-2.png',
+      img: './img/shop/ice-cream-spoon-2.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'Pralines & Cream',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
       price: '6.50'
     },
     {
-      img: '../../img/shop/ice-cream-spoon-3.png',
+      img: './img/shop/ice-cream-spoon-3.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'Brambleberry Crisp',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
       price: '5.50'
     },
     {
-      img: '../../img/shop/ice-cream-spoon.png',
+      img: './img/shop/ice-cream-spoon.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'Roasted Strawberry Buttermilk',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
       price: '5.50'
     },
     {
-      img: '../../img/shop/ice-cream-spoon-2.png',
+      img: './img/shop/ice-cream-spoon-2.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'Pistachio & Honey',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
       price: '6.00'
     },
     {
-      img: '../../img/shop/ice-cream-spoon-3.png',
+      img: './img/shop/ice-cream-spoon-3.png',
       imgAlt: 'Lorem Ipsum',
       headline: 'Wildberry Lavender',
       body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
