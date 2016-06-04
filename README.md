@@ -7,6 +7,8 @@ This is intented as a practice project as I navigate the ins and outs of Cordova
 * Andriod
 * Mobile Browsers
 
+All code is written in the ```myApp/www/``` directory. (Except for SCSS, that is written in the ```myApp/scss/``` directory.) The **IOS**, **Android**, and **browser** code is depoloyed to the ```myApp/platforms[current platform directory]``` folder.
+
 ### Tech Stack:
 * [Cordova](https://cordova.apache.org/)
 * [Phonegap](http://phonegap.com/)
