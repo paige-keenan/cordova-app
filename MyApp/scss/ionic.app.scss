@@ -104,20 +104,20 @@ nav {
   svg {
     height: 40px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto 0;
     padding: 5px 0;
   }
 
   button {
     padding: 0;
     width: 30px;
-    height: 17px;
+    height: 30px;
     background: transparent;
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 5%;
-    -webkit-transform: translateY(-8.5px);
-    transform: translateY(-8.5px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
     @include basic-button;
 
 
@@ -138,11 +138,11 @@ nav {
       }
 
       &:before {
-        top: 0;
+        top: 5px;
       }
 
       &:after {
-        bottom: 0;
+        bottom: 5px;
       }
     }
   }
@@ -151,12 +151,11 @@ nav {
     padding: 0;
     margin: 0;
     width: 100%;
-    background:
-    ;
+    background: $primary-color;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0;
     transition: .2s ease-in-out;
 
@@ -188,7 +187,7 @@ nav {
 .selfie-page,
 .shop-page,
 .help-page {
-  padding-top: 50px;
+  padding-top: 70px;
 
   img {
     width: 100%;
@@ -300,5 +299,27 @@ nav {
         transform: translateY(-5px) rotate(180deg);
       }
     }
+  }
+}
+
+.selfie-page {
+  li {
+    list-style: none;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  ul {
+    -webkit-display: flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
   }
 }

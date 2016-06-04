@@ -52,18 +52,18 @@ nav {
   nav svg {
     height: 40px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto 0;
     padding: 5px 0; }
   nav button {
     padding: 0;
     width: 30px;
-    height: 17px;
+    height: 30px;
     background: transparent;
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 5%;
-    -webkit-transform: translateY(-8.5px);
-    transform: translateY(-8.5px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
     border: 0;
     cursor: pointer; }
     nav button a {
@@ -79,9 +79,9 @@ nav {
         position: absolute;
         right: 0; }
       nav button a:before {
-        top: 0; }
+        top: 5px; }
       nav button a:after {
-        bottom: 0; }
+        bottom: 5px; }
   nav ul {
     padding: 0;
     margin: 0;
@@ -90,7 +90,7 @@ nav {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0;
     transition: .2s ease-in-out; }
     nav ul li {
@@ -119,7 +119,7 @@ nav {
 .selfie-page,
 .shop-page,
 .help-page {
-  padding-top: 50px; }
+  padding-top: 70px; }
   .home-page img,
   .about-page img,
   .selfie-page img,
@@ -156,9 +156,12 @@ nav {
       margin: 13px auto; }
 
 .shop-page section {
+  -webkit-display: flex;
   display: flex;
   margin-bottom: 10px;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center; }
   .shop-page section:first-of-type {
     padding-top: 20px;
@@ -222,3 +225,20 @@ nav {
   .help-page section.is-open h3:before {
     -webkit-transform: translateY(-5px) rotate(180deg);
     transform: translateY(-5px) rotate(180deg); }
+
+.selfie-page li {
+  list-style: none;
+  width: 50%;
+  overflow: hidden; }
+
+.selfie-page ul {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+
+.selfie-page img {
+  width: auto;
+  height: 100%; }
