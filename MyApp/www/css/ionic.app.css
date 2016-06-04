@@ -180,7 +180,12 @@ nav {
     margin: 0 20px; }
 
 .help-page h2 {
-  margin-bottom: 30px; }
+  width: 90%;
+  padding: 0 5%;
+  padding: 75px 5%;
+  margin: 0;
+  color: #fff;
+  background: #313131; }
 
 .help-page h3,
 .help-page p {
@@ -225,6 +230,17 @@ nav {
   .help-page section.is-open h3:before {
     -webkit-transform: translateY(-5px) rotate(180deg);
     transform: translateY(-5px) rotate(180deg); }
+
+.selfie-page h2 {
+  width: 90%;
+  padding: 0 5%;
+  padding: 75px 5%;
+  margin: 0;
+  color: #fff;
+  background: #3896A1; }
+
+.selfie-page p {
+  padding: 30px 0 0; }
 
 .selfie-page li {
   list-style: none;

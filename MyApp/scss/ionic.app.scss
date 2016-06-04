@@ -7,6 +7,8 @@ $paragraph-color: $headline-color;
 $accent-color: #EF8C64;
 $modal-background: rgba(0, 0, 0, 0.57);
 $light-orange-border: #FFEDE6;
+$off-black: #313131;
+$teal: #3896A1;
 
 // Mixins
 // =====================
@@ -48,6 +50,13 @@ $light-orange-border: #FFEDE6;
   font-size: 13px;
   display: block;
   margin: 13px auto;
+}
+
+@mixin headline-no-image {
+  @include container;
+  padding: 75px 5%;
+  margin: 0;
+  color: $white;
 }
 
 
@@ -243,7 +252,8 @@ nav {
 
 .help-page {
   h2 {
-    margin-bottom: 30px;
+    @include headline-no-image;
+    background: $off-black;
   }
 
   h3,
@@ -303,6 +313,15 @@ nav {
 }
 
 .selfie-page {
+  h2 {
+    @include headline-no-image;
+    background: $teal;
+  }
+
+  p {
+    padding: 30px 0 0;
+  }
+
   li {
     list-style: none;
     width: 50%;
