@@ -8,6 +8,7 @@ $accent-color: #EF8C64;
 $modal-background: rgba(0, 0, 0, 0.57);
 $light-orange-border: #FFEDE6;
 $off-black: #313131;
+$off-white: #EAEAEA;
 $teal: #3896A1;
 
 // Mixins
@@ -326,6 +327,9 @@ nav {
     list-style: none;
     width: 50%;
     overflow: hidden;
+    background: $off-white;
+    position: relative;
+    height: 150px;
   }
 
   ul {
@@ -338,7 +342,15 @@ nav {
   }
 
   img {
-    width: auto;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 140%;
+  }
+
+  section {
+    button {
+      margin: 13px auto 30px;
+    }
   }
 }
