@@ -9,9 +9,12 @@ function onDeviceReady() {
 }
 
 function onPhotoDataSuccess(imageData) {
-  var smallImage = document.getElementById('smallImage');
-  smallImage.style.display = 'block';
-  smallImage.src = "data:image/jpeg;base64," + imageData;
+  var imageContainer = document.getElementById('imageContainer');
+  var image = document.createElement('li');
+  var imageSrc = document.createElement('img')
+  imageSrc.src = 'data:image/jpeg;base64,' + imageData;
+  image.appendChild(imageSrc);
+  imageContainer.appendChild(image);
 }
 
 function capturePhoto() {
