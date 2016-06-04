@@ -1,6 +1,6 @@
 <!-- Help Page -->
 <section class='help-page'>
-  <h2>Frequntly Asked Questions</h2>
+  <h2>Frequently Asked Questions</h2>
   <section ng-repeat="data in helpData" ng-controller="faqControl" ng-class="{'is-open': isActive}">
     <h3 ng-click='toggleFaq();$event.stopPropagation();'><span>Q.</span>{{data.question}}?</h3>
     <p><span>A.</span>{{data.answer}}</p>
