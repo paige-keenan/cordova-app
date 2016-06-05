@@ -24,8 +24,13 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     // SELFIE SUNDAE PAGE AND MULTIPLE NAMED VIEWS =================================
     .state('selfie-sundae', {
       url: '/selfie-sundae',
-      templateUrl: 'pages/selfie-sundae/index.html',
-      controller: 'aboutController'
+      templateUrl: 'pages/selfie-sundae/index.html'
+    })
+
+    // STORE LOCATOR PAGE AND MULTIPLE NAMED VIEWS =================================
+    .state('store-locator', {
+      url: '/store-locator',
+      templateUrl: 'pages/store-locator/index.html'
     })
 
     // SHOP PAGE AND MULTIPLE NAMED VIEWS =================================
