@@ -201,6 +201,7 @@ myApp.controller('faqControl', function($scope) {
   };
 });
 
+// Map Control
 myApp.controller('mapControl', function($scope) {
-  google.maps.event.addDomListener(window, 'load', initMap);
+  initMap();
 });
