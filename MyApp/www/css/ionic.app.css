@@ -118,19 +118,22 @@ nav {
 .about-page,
 .selfie-page,
 .shop-page,
-.help-page {
+.help-page,
+.store-page {
   padding-top: 70px; }
   .home-page img,
   .about-page img,
   .selfie-page img,
   .shop-page img,
-  .help-page img {
+  .help-page img,
+  .store-page img {
     width: 100%; }
   .home-page section,
   .about-page section,
   .selfie-page section,
   .shop-page section,
-  .help-page section {
+  .help-page section,
+  .store-page section {
     width: 90%;
     padding: 0 5%;
     margin-bottom: 40px; }
@@ -138,7 +141,8 @@ nav {
     .about-page section button,
     .selfie-page section button,
     .shop-page section button,
-    .help-page section button {
+    .help-page section button,
+    .store-page section button {
       border: 0;
       cursor: pointer;
       background: #f74902;
@@ -266,3 +270,6 @@ nav {
 
 .selfie-page section button {
   margin: 13px auto 30px; }
+
+.store-page #map {
+  height: 300px; }
