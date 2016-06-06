@@ -48,7 +48,6 @@ function initMap() {
 
   create_map();
 
-
   function create_map() {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 4,
@@ -62,7 +61,8 @@ function initMap() {
       var shopLatLong = locations[shop];
       var marker = new google.maps.Marker({
         position: shopLatLong,
-        map: map
+        map: map,
+        icon: 'img/store-locator/ice-cream.svg'
       });
     }
   }
