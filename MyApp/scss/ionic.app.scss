@@ -361,6 +361,43 @@ nav {
     height: 300px;
   }
 
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    @include headline-no-image;
+    background: $off-black;
+
+    &:first-of-type {
+      background: $teal;
+    }
+  }
+
+  p {
+    padding-top: 40px;
+  }
+
+  form {
+    display: flex;
+    margin: 0 5% 30px;
+
+    input {
+      height: 30px;
+      @include paragraph-font;
+      text-align: left;
+      width: 100%;
+      padding-left: 10px;
+    }
+
+    button {
+      @include primary-button;
+      margin: 0;
+      padding: 7px 20px;
+    }
+
+  }
+
   #store-info-container {
     display: none;
 
