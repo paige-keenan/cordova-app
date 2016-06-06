@@ -360,4 +360,12 @@ nav {
   #map {
     height: 300px;
   }
+
+  #store-info-container {
+    display: none;
+
+    span {
+      color: $primary-color;
+    }
+  }
 }

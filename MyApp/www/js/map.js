@@ -70,6 +70,7 @@ function initMap() {
   function plot_markers_on_map(map) {
     for (shop in shops) {
       var shopLatLong = shops[shop];
+      var title = shops[shop].location;
       var marker = new google.maps.Marker({
         position: shopLatLong,
         map: map,
@@ -124,8 +125,13 @@ function initMap() {
           closest = i;
       }
     }
-
-    console.log(shops[closest].location);
+    // Append nearest store info to page.
+    var store = document.getElementById('store-info');
+    var location = shops[closest].location;
+    console.log(store);
+    console.log(location);
+    store.innerHTML = location;
+    document.getElementById('store-info-container').style.display = 'block';
   }
 
   function rad(x) {

@@ -273,3 +273,8 @@ nav {
 
 .store-page #map {
   height: 300px; }
+
+.store-page #store-info-container {
+  display: none; }
+  .store-page #store-info-container span {
+    color: #f74902; }
